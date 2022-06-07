@@ -1,4 +1,4 @@
-##Arrays Methods
+## Arrays Methods
 
 ### Array.map()
 
