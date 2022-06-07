@@ -1,6 +1,7 @@
 ##Arrays Methods
 
-###Array.map()
+### Array.map()
+
 Returns a new array with the results of calling a provided function on every element in this array.
 ```
 const list = [😫, 😫, 😫, 😫];
@@ -13,7 +14,8 @@ list.map((el) => el * 2); // [2, 4, 6, 8]
 ```
 
 ------------------------------------------
-###Array.filter()
+### Array.filter()
+
 Returns a new array with all elements that pass the test implemented by the provided function.
 ```
 const list = [😀, 😫, 😀, 😫];
@@ -26,7 +28,8 @@ list.filter((el) => el % 2 === 0); // [2, 4]
 ```
 
 ------------------------------------------
-###Array.reduce()
+### Array.reduce()
+
 Reduce the array to a single value.The value returned by the function is stored in an accumulator(result / total).
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -39,7 +42,8 @@ list.reduce((total, item) => total + item, 0); // 15
 ```
 
 ------------------------------------------
-###Array.reduceRight()
+### Array.reduceRight()
+
 Executes a reducer function (that you provide) on each element of the array resulting in a single output value(from right to left).
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -52,7 +56,8 @@ list.reduceRight((total, item) => total + item, 0); // 15
 ```
 
 ------------------------------------------
-###Array.fill()
+### Array.fill()
+
 Fill the elements in an array with a static value.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -65,7 +70,8 @@ list.fill(0); // [0, 0, 0, 0, 0]
 ```
 
 ------------------------------------------
-###Array.find()
+### Array.find()
+
 Returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -80,7 +86,8 @@ list.find((el) => el === 6); // undefined
 ```
 
 ------------------------------------------
-###Array.indexOf()
+### Array.indexOf()
+
 Returns the first index at which a given element can be found in the array, or - 1 if it is not present.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -95,7 +102,8 @@ list.indexOf(6); // -1
 ```
 
 ------------------------------------------
-###Array.lastIndexOf()
+### Array.lastIndexOf()
+
 Returns the last index at which a given element can be found in the array, or - 1 if it is not present.The array is searched backwards, starting at fromIndex.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -110,7 +118,8 @@ list.lastIndexOf(3, 1); // -1
 ```
 
 ------------------------------------------
-###Array.findIndex()
+### Array.findIndex()
+
 Returns the index of the first element in the array that satisfies the provided testing function.Otherwise - 1 is returned.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -135,7 +144,8 @@ array.findIndex((element) => element.id === 🤪); // 2
 ```
 
 ------------------------------------------
-###Array.includes()
+### Array.includes()
+
 Returns true if the given element is present in the array.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -149,7 +159,8 @@ list.includes(6); // false
 ```
 
 ------------------------------------------
-###Array.pop()
+### Array.pop()
+
 Removes the last element from an array and returns that element.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -164,7 +175,8 @@ list; // [1, 2, 3, 4]
 ```
 
 ------------------------------------------
-###Array.push()
+### Array.push()
+
 Appends new elements to the end of an array, and returns the new length.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -179,7 +191,8 @@ list; // [1, 2, 3, 4, 5, 6]
 ```
 
 ------------------------------------------
-###Array.shift()
+### Array.shift()
+
 Removes the first element from an array and returns that element.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -194,7 +207,8 @@ list; // [2, 3, 4, 5]
 ```
 
 ------------------------------------------
-###Array.unshift()
+### Array.unshift()
+
 Adds new elements to the beginning of an array, and returns the new length.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -209,7 +223,8 @@ list; // [0, 1, 2, 3, 4, 5]
 ```
 
 ------------------------------------------
-###Array.splice()
+### Array.splice()
+
 Changes the contents of an array by removing or replacing existing elements and / or adding new elements in place.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -224,7 +239,8 @@ list; // [1, 4, 5]
 ```
 
 ------------------------------------------
-###Array.slice()
+### Array.slice()
+
 Returns a shallow copy of a portion of an array into a new array object selected from begin to end(end not included).The original array will not be modified.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -239,7 +255,8 @@ list; // [1, 2, 3, 4, 5]
 ```
 
 ------------------------------------------
-###Array.join()
+### Array.join()
+
 Joins all elements of an array into a string.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -252,7 +269,8 @@ list.join(', '); // "1, 2, 3, 4, 5"
 ```
 
 ------------------------------------------
-###Array.reverse()
+### Array.reverse()
+
 Reverses the order of the elements in an array.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -267,7 +285,8 @@ list; // [5, 4, 3, 2, 1]
 ```
 
 ------------------------------------------
-###Array.sort()
+### Array.sort()
+
 Sorts the elements of an array in place and returns the array.The default sort order is according to string Unicode code points.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -286,7 +305,8 @@ array.sort((a, b) => a - b); // 😀 [1, 2, 3, 4, 10]
 ```
 
 ------------------------------------------
-###Array.some()
+### Array.some()
+
 Returns true if at least one element in the array passes the test implemented by the provided function.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -301,7 +321,8 @@ list.some((el) => el === 6); // false
 ```
 
 ------------------------------------------
-###Array.every()
+### Array.every()
+
 Returns true if all elements in the array pass the test implemented by the provided function.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -320,7 +341,8 @@ list.every((el) => el % 2 === 0); // true
 ```
 
 ------------------------------------------
-###Array.from()
+### Array.from()
+
 Creates a new array from an array - like or iterable object.
 ```
 const list = 😀😫😀😫🤪;
@@ -336,7 +358,8 @@ console.log(range(10)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
 ------------------------------------------
-###Array.of()
+### Array.of()
+
 Creates a new array with a variable number of arguments, regardless of number or type of the arguments.
 ```
 const list = Array.of(😀, 😫, 😀, 😫, 🤪);
@@ -349,7 +372,8 @@ list; // [1, 2, 3, 4, 5]
 ```
 
 ------------------------------------------
-###Array.isArray()
+### Array.isArray()
+
 Returns true if the given value is an array.
 ```
 Array.isArray([😀, 😫, 😀, 😫, 🤪]); // true
@@ -362,7 +386,8 @@ Array.isArray(5); // false
 ```
 
 ------------------------------------------
-###Array.at()
+### Array.at()
+
 Returns a value at the specified index.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -381,7 +406,8 @@ list.at(-2); // 4
 ```
 
 ------------------------------------------
-###Array.copyWithin()
+### Array.copyWithin()
+
 Copies array elements within the array.Returns the modified array.
 ```
 const list = [😀, 😫, 😀, 😫, 🤪];
@@ -402,7 +428,8 @@ second argument is the index at which to start copying elements from.
 third argument is the index at which to stop copying elements from.
 
 ------------------------------------------
-###Array.flat()
+### Array.flat()
+
 Returns a new array with all sub - array elements concatenated into it recursively up to the specified depth.
 ```
 const list = [😀, 😫, [😀, 😫, 🤪]];
@@ -415,7 +442,8 @@ list.flat(Infinity); // [1, 2, 3, 4, 5, 6]
 ```
 
 ------------------------------------------
-###Array.flatMap()
+### Array.flatMap()
+
 Returns a new array formed by applying a given callback function to each element of the array,
 ```
 const list = [😀, 😫, [😀, 😫, 🤪]];
