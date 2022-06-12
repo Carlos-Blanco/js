@@ -456,4 +456,4 @@ list.flatMap((el) => [el, el * el]); // [1, 1, 2, 4, 3, 9]
 ```
 
 
-[dev.to](https://dev.to/devsmitra/28-javascript-array-hacks-a-cheat-sheet-for-developer-5769)
+Source [dev.to](https://dev.to/devsmitra/28-javascript-array-hacks-a-cheat-sheet-for-developer-5769)
