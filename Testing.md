@@ -9,6 +9,7 @@
 4 - UI tests
 
 
+
 ### Assertions / matchers
 
 ```
@@ -48,6 +49,7 @@ test('list / arrays', () => {
 });
 ```
 
+
 ```
 test('comparing numbers', () => {
   const value = 2 + 2;
@@ -81,3 +83,14 @@ test('exception error', () => {
   expect(() => formComplete()).toThrow(/not completed/);
 });
 ```
+
+
+### Setup and Teardown
+
+beforeAll(): se ejecuta antes de todas las pruebas.
+
+beforeEach(): se ejecuta antes de cada prueba.
+
+afterEach(): se ejecuta después de cada prueba.
+
+afterAll(): se ejecuta después de todas las pruebas
