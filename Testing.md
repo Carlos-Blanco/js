@@ -20,7 +20,19 @@ Assert expected outcomes. Act steps should elicit some sort of response. Assert 
 
 [Source](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/)
 
-
+```
+test('test obj', () => {
+  //arrange...
+  var dummyData = { foo: 'bar' };
+  var expected = 'the result we want';
+ 
+  //act...
+  var result = functionUnderTest(dummyData);
+ 
+  //assert...
+  expect(result).to.equal(expected);
+});
+```
 
 ### Assertions / matchers
 
