@@ -13,9 +13,9 @@
 
 ```
 test('test obj', () => {
-  const data = { name: 'Rigo' }; // Para testear objetos se usa .toEqual.
-  data.lastname = 'Molina'; // Manipulación del objeto.
-  expect(data).toEqual({ name: 'Rigo', lastname: 'Molina' }); // Espero que el objeto de arriba sea igual a este.
+  const data = { name: 'Carlos' }; // Para testear objetos se usa .toEqual.
+  data.lastname = 'Blanco'; // Manipulación del objeto.
+  expect(data).toEqual({ name: 'Carlos', lastname: 'Blanco' }); // Espero que el objeto de arriba sea igual a este.
 });
 
 test('null', () => {
