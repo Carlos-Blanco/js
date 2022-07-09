@@ -118,3 +118,8 @@ beforeEach(): se ejecuta antes de cada prueba.
 afterEach(): se ejecuta después de cada prueba.
 
 afterAll(): se ejecuta después de todas las pruebas
+
+
+### Test Coverage
+
+Es una medida porcentual que indica cuanto falta probar del código que va a ir a producción, cuál ya está probado, cuál no se usa. ISO y la FAA exigen 100% de cobertura, pero en la realidad no es tan así, por ejemplo hacer test a setter y getters puede llegar a ser innecesario, este 100% no garantiza que aparezcan errores ni que sean el mejor set de pruebas.
