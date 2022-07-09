@@ -7,3 +7,10 @@
 3 - End to end tests
 
 4 - UI tests
+
+
+```
+test('Describe test', () => {
+  expect(true).toBe(true);
+})
+```
