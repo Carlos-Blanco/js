@@ -19,4 +19,6 @@ function Persona() {
 const Yo = new Persona()
 
 console.log(Yo)
+
+Yo.hasOwnProperty('age')
 ```
