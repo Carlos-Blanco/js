@@ -1,5 +1,5 @@
 ## Objeto literal
-```
+```js
 const persona = {
   name: 'Carlos',
   age: 46,
@@ -10,7 +10,7 @@ console.log(persona);
 
 
 ## Clase POO
-```
+```js
 function Persona() {
   this.name = 'Carlos',
   this.age = 46

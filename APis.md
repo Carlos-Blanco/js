@@ -2,10 +2,10 @@
 
 ## Fetch Promises
 
-```
+```js
 const URL = 'https://api.thecatapi.com/v1/images/search';
 
-fetch (URL) 
+fetch (URL) {
     .then(res => res.json())
     .then(data => {
       const img = document.querySelector('img');
@@ -16,7 +16,7 @@ fetch (URL)
 
 ## Fetch Async Await
 
-```
+```js
 const URL = 'https://api.thecatapi.com/v1/images/search';
 
 async function myCat () {
