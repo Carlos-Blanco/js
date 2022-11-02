@@ -22,3 +22,12 @@ console.log(Yo)
 
 Yo.hasOwnProperty('age')
 ```
+
+## Own property vs Prototype property
+```js
+function Bird(name) {
+  this.name = name;  //own property
+}
+
+Bird.prototype.numLegs = 2; // prototype property
+```
