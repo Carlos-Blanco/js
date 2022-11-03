@@ -81,3 +81,28 @@ let crow = new Bird("Alexis", "black");
 
 crow instanceof Bird; //true
 ```
+
+## Understand the Constructor Property
+```js
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle = new Dog();
+
+beagle.constructor === Dog; //true
+```
+
+## Reset an Inherited Constructor Property
+```js
+function Animal() { }
+function Bird() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+
+let duck = new Bird();
+duck.constructor //Animal
+
+Bird.prototype.constructor = Bird;
+duck.constructor //Bird
+```
