@@ -20,7 +20,7 @@ Assert expected outcomes. Act steps should elicit some sort of response. Assert 
 
 [Source](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/)
 
-```
+```js
 test('test obj', () => {
   //arrange...
   var dummyData = { foo: 'bar' };
@@ -36,7 +36,7 @@ test('test obj', () => {
 
 ## Assertions / matchers
 
-```
+```js
 test('test obj', () => {
   const data = { name: 'Carlos' }; // Para testear objetos se usa .toEqual.
   data.lastname = 'Blanco'; // Manipulación del objeto.
@@ -74,7 +74,7 @@ test('list / arrays', () => {
 ```
 
 
-```
+```js
 test('comparing numbers', () => {
   const value = 2 + 2;
   expect(value).toBeGreaterThan(3); // Es mayor a 3?
