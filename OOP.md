@@ -1,6 +1,6 @@
 # Object Oriented Programming
 
-## Objeto literal
+## Literal Object
 ```js
 const persona = {
   name: 'Carlos',
@@ -11,7 +11,7 @@ console.log(persona);
 ```
 
 
-## Clase POO
+## Class OOP
 ```js
 function Persona() {
   this.name = 'Carlos',
