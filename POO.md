@@ -43,6 +43,17 @@ Bird.prototype.fly = function() {
 };
 ```
 
+## Extend Constructors to Receive Arguments
+```js
+function Bird(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 2;
+}
+
+let blackbird = new Bird('Thomas', 'black');
+```
+
 ## Use Inheritance So You Don't Repeat Yourself
 ```js
 function Animal() { };
@@ -56,4 +67,17 @@ Animal.prototype = {
 
 let duck = new Animal();
 let beagle = new Animal();
+```
+
+## Verify an Object's Constructor with instanceof
+```js
+let Bird = function(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 2;
+}
+
+let crow = new Bird("Alexis", "black");
+
+crow instanceof Bird; //true
 ```
