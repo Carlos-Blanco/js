@@ -31,3 +31,29 @@ function Bird(name) {
 
 Bird.prototype.numLegs = 2; // prototype property
 ```
+
+## Add Prototype property
+```js
+function Bird(name) {
+  this.name = name;  //own property
+}
+
+Bird.prototype.fly = function() {
+  console.log("I'm flying!");
+};
+```
+
+## Use Inheritance So You Don't Repeat Yourself
+```js
+function Animal() { };
+
+Animal.prototype = {
+  constructor: Animal, 
+  describe: function() {
+    console.log("My name is " + this.name);
+  }
+};
+
+let duck = new Animal();
+let beagle = new Animal();
+```
