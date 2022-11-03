@@ -1,3 +1,5 @@
+# Object Oriented Programming
+
 ## Objeto literal
 ```js
 const persona = {

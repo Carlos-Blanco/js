@@ -1,3 +1,5 @@
+# Functional Programming
+
 ## Callbacks - Passing functions into another function
 ```js
 const prepareGreenTea = () => 'greenTea';
