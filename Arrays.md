@@ -456,4 +456,15 @@ list.flatMap((el) => [el, el * el]); // [1, 1, 2, 4, 3, 9]
 ```
 
 
+### Copying Arrays
+
+```js
+const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+
+const newBookList = bookList; // Create a reference
+const newBookList = [...bookList]; // Create a new Array
+```
+
+
+
 Source [dev.to](https://dev.to/devsmitra/28-javascript-array-hacks-a-cheat-sheet-for-developer-5769)
