@@ -462,7 +462,8 @@ list.flatMap((el) => [el, el * el]); // [1, 1, 2, 4, 3, 9]
 const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
 
 const newBookList = bookList; // Create a reference
-const newBookList = [...bookList]; // Create a new Array
+const newBookList = [...bookList]; // Create a new Array (1 level)
+const newBookList = structuredClone(bookList); // Create a new Array (complete) - Best Option
 ```
 
 
