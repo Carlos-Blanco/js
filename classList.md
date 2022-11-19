@@ -43,3 +43,10 @@ const card = document.querySelector("card");
 
 card.classList.contains("card"); // return true
 ```
+
+## forEach
+```js
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+```
