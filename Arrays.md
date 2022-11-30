@@ -455,7 +455,7 @@ const list = [1, 2, 3];
 list.flatMap((el) => [el, el * el]); // [1, 1, 2, 4, 3, 9]
 ```
 
-### forEach
+### Array.forEach()
 ```js
 const array1 = ['a', 'b', 'c'];
 
