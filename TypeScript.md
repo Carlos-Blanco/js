@@ -68,3 +68,32 @@ console.log(randomValue.name);  // Error: Object is of type unknown
 randomValue();                  // Error: Object is of type unknown
 randomValue.toUpperCase();      // Error: Object is of type unknown
 ```
+
+## Aserción de tipos
+```ts
+(randomValue as string).toUpperCase();
+
+(<string>randomValue).toUpperCase();
+```
+```ts
+let randomValue: unknown = 10;
+
+randomValue = true;
+randomValue = 'Mateo';
+
+if (typeof randomValue === "string") {
+    console.log((randomValue as string).toUpperCase());    //* Returns MATEO to the console.
+} else {
+    console.log("Error - A string was expected here.");    //* Returns an error message.
+}
+```
+
+## Restricciones de tipos
+```ts
+string	      typeof s === "string"
+number	      typeof n === "number"
+boolean	      typeof b === "boolean"
+undefined	    typeof undefined === "undefined"
+function	    typeof f === "function"
+array	        Array.isArray(a)
+```
