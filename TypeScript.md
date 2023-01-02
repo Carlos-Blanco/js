@@ -51,7 +51,20 @@ let employeeStatus: ContractStatus = ContractStatus.Temp;
 console.log(employeeStatus);
 ```
 
-## Tipos any y unknown
+## El tipo any
 ```ts
+let randomValue: any = 10;
+randomValue = 'Mateo';   // OK
+randomValue = true;      // OK
+```
 
+## El tipo unknown
+```ts
+let randomValue: unknown = 10;
+randomValue = true;
+randomValue = 'Mateo';
+
+console.log(randomValue.name);  // Error: Object is of type unknown
+randomValue();                  // Error: Object is of type unknown
+randomValue.toUpperCase();      // Error: Object is of type unknown
 ```
