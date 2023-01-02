@@ -90,10 +90,10 @@ if (typeof randomValue === "string") {
 
 ## Restricciones de tipos
 ```ts
-string	      typeof s === "string"
-number	      typeof n === "number"
-boolean	      typeof b === "boolean"
-undefined	    typeof undefined === "undefined"
-function	    typeof f === "function"
-array	        Array.isArray(a)
+string        typeof s === "string"
+number        typeof n === "number"
+boolean       typeof b === "boolean"
+undefined     typeof undefined === "undefined"
+function      typeof f === "function"
+array         Array.isArray(a)
 ```
