@@ -8,6 +8,7 @@ function addNumbers(x: number, y: number) {
 console.log(addNumbers(3, 6));
 ```
 
+
 ## Tipo booleano
 
 ```ts
@@ -15,6 +16,7 @@ let flag: boolean;
 let yes = true;
 let no = false;
 ```
+
 
 ## Tipos numéricos y BigInteger
 
@@ -24,6 +26,7 @@ let y = 0;
 let z: number = 123.456;
 let big: bigint = 100n;
 ```
+
 
 ## Tipo de cadena
 
@@ -37,6 +40,7 @@ let sentence: string = `My name is ${firstName}.
     I am new to TypeScript.`;
 console.log(sentence);
 ```
+
 
 ## Los tipos void, null y undefined
 
