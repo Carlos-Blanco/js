@@ -97,3 +97,11 @@ undefined     typeof undefined === "undefined"
 function      typeof f === "function"
 array         Array.isArray(a)
 ```
+
+## Tipos de unión
+```ts
+let multiType: number | boolean;
+multiType = 20;         //* Valid
+multiType = true;       //* Valid
+multiType = "twenty";   //* Invalid
+```
