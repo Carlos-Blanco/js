@@ -159,3 +159,12 @@ let list: number[] = [1, 2, 3];
 
 let list: Array<number> = [1, 2, 3];
 ```
+
+## Tuplas
+```ts
+let person1: [string, number] = ['Marcia', 35];
+
+let person1: [string, number] = ['Marcia', 35, true];  // Error
+
+let person1: [string, number] = [35, 'Marcia'];  // Error
+```
