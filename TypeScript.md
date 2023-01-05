@@ -152,3 +152,10 @@ diceRoll = 1;    //* Valid
 diceRoll = 2;    //* Valid
 diceRoll = 7;    //* Invalid
 ```
+
+## Matrices
+```ts
+let list: number[] = [1, 2, 3];
+
+let list: Array<number> = [1, 2, 3];
+```
