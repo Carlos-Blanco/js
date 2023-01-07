@@ -35,11 +35,6 @@ let sentence: string = `My name is ${firstName}.
 console.log(sentence);
 ```
 
-## Los tipos void, null y undefined
-```ts
-
-```
-
 ## El tipo de enumeración
 ```ts
 enum ContractStatus {
