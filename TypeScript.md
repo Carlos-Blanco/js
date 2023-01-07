@@ -1,3 +1,4 @@
+# TIPOS
 ## Tipado
 ```ts
 function addNumbers(x: number, y: number) {
@@ -167,4 +168,14 @@ let person1: [string, number] = ['Marcia', 35];
 let person1: [string, number] = ['Marcia', 35, true];  // Error
 
 let person1: [string, number] = [35, 'Marcia'];  // Error
+```
+
+# INTERFACES
+
+```ts
+interface Employee {
+    firstName: string;
+    lastName: string;
+    fullName(): string;
+}
 ```
